@@ -3,7 +3,7 @@ error_reporting(0);
 function encrypt_decrypt($action, $string, $secret_key) {
     $output = false;
     $encrypt_method = "AES-256-CBC";
-    //use of AES encryption
+    //
     $secret_iv = 'This is my secret iv';
     // hash
     $key = hash('sha256', $secret_key);
